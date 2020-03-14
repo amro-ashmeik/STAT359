@@ -26,7 +26,7 @@ The metrics I used to describe the forecast accuracy of the model are mean absol
 
 With regards to significant dates, my report generator provides a table that shows the dates of the significant events with the percent change between the day of the event and the preceding event. The significant events are not outliers of the observations themselves, but outliers in the percent change of some feature X between 2 consecutive days. In addition to the table, the report generator creates a plot of the data, fitted data, and markings at the dates of the significant events. Here is an example of the table and plot that would be generated:
 
-!(./example.png)
+![Image](example.png)
 
 An example dataset along with respective report generated is included in this repo. 
 
