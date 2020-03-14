@@ -9,8 +9,8 @@ Report generation is a critical component of the data science pipeline and autom
 For the purposes of this project, I developed a report generator based on the following inputs and assumptions:
 1.	A .csv file of cleaned data with 2 columns: Date, X (feature X can be any arbitrary numerical value). The name is this file is assumed to be “daily_data.csv”
 2.	A .csv file of predictions for feature X fitted on the .csv file from 1.
-  -	Multiple .csv files can be exist (e.g. different seeds of a model)
-  -	The names of these files are assumed to be “fitted_daily_data_i.csv” where I is the # of the seed
+    -	Multiple .csv files can be exist (e.g. different seeds of a model)
+    -	The names of these files are assumed to be “fitted_daily_data_i.csv” where I is the # of the seed
 3.	Training period N provided by the user (each prediction point for a date is based on training on N previous days).
 4.	A user-inputted modified z-score to use as a threshold. Observations with a modified z-score (based on the median absolute deviation) greater than the provided value will be considered outliers.
 5.	A user-inputted confidence that the report generator will use to create a confidence interval for predictions.
@@ -26,7 +26,7 @@ The metrics I used to describe the forecast accuracy of the model are mean absol
 
 With regards to significant dates, my report generator provides a table that shows the dates of the significant events with the percent change between the day of the event and the preceding event. The significant events are not outliers of the observations themselves, but outliers in the percent change of some feature X between 2 consecutive days. In addition to the table, the report generator creates a plot of the data, fitted data, and markings at the dates of the significant events. Here is an example of the table and plot that would be generated:
 
-(example.png)
+(./example.png)
 
 An example dataset along with respective report generated is included in this repo. 
 
