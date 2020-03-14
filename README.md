@@ -33,4 +33,24 @@ An example dataset along with respective report generated is included in this re
 
 ## Reproducing
 
+This report generator was developed using Python 3.7.4. The following libraries are required:
+*	Numpy
+*	Pandas
+*	Matplotlib
+*	Scipy
+*	Pdflatex
+*	Sklearn
+
+The code is run based on the assumptions described earlier. To create a report, run “python3 main.py” with the following parameters in terminal/console:
+1.	Title of the report
+2.	Author
+3.	Name of the dataset (There can be no spaces in the name of the dataset)
+4.	Z-score threshold for outlier detection
+5.	Training period (number of days each fitted data point was trained on)
+6.	Confidence for creating the confidence interval of each prediction
+7.	Seed count for the # of seeds/models used, The number of fitted data files generated.
+
+Example:
+“python3 main.py ‘Automatic Report Generator’ ‘Elon Musk’ ‘AAPL’ 3.5 14 0.95 5”
+
 ## Pipeline and Future Work
