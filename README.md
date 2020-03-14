@@ -54,3 +54,7 @@ Example:
 “python3 main.py ‘Automatic Report Generator’ ‘Elon Musk’ ‘AAPL’ 3.5 14 0.95 5”
 
 ## Pipeline and Future Work
+
+The data science pipeline is fascinating and lends itself well to modularization. Despite working to a certain degree of isolation from the other modules of the data science pipeline, it was still important to consider the flow of information through the pipeline. The pipeline begins with data acquisition, where then the data is stored in its raw form before being pre-processed then stored again in a cleaned format. Then the data can be used to generate models which will be validated and potentially improved upon again through methods such as hyperparameter turning in a repeating cycle until the desired model is produced, selected, and finally deployed and continuously monitored.
+
+There are many improvements that can be made on this report generator. For instance, the report could include more comprehensive results from the model selection stage of the data science pipeline. The report could have the results for each model selected and the different tradeoffs that different models have. Automatic Statistician does this with the caveat that the model selection process has a preference for simpler models as it makes it more straightforward to generate a natural language description of the model, thereby improving the model’s interpretability.
